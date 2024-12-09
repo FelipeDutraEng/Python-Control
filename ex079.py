@@ -9,4 +9,5 @@ while True:
     continuar = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if continuar != 'S':
         break
+print('-='*30)
 print('Você digitou os valores', sorted(valores))

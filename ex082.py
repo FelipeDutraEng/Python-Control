@@ -2,10 +2,9 @@ valores = list()
 pares = list()
 impares = list()
 while True:
-    num = int(input('Digite um número: '))
-    valores.append(num)
+    valores.append(int(input('Digite um número: ')))
     continuar = str(input('Quer continuar? [S/N] ')).strip().upper()
-    if continuar == 'N':
+    if continuar in 'Nn':
         break
 for v in valores:
     if v % 2 == 0:
@@ -15,11 +14,8 @@ for v in valores:
 print('-='*30)
 
 print(f'A lita completa é {valores},', end=' ')
-valores.sort()
-print(f'Os valores em ordem fica {valores}')
+print(f'Os valores em ordem fica {valores.sort()}')
 print(f'A lista de pares é {pares},', end=' ')
-pares.sort()
-print(f'Os valores em ordem fica {pares}')
+print(f'Os valores em ordem fica {pares.sort()}')
 print(f'A lista de ímpares é {impares},', end=' ')
-impares.sort()
-print(f'Os valores em ordem fica {impares}')
+print(f'Os valores em ordem fica {impares.sort()}')
