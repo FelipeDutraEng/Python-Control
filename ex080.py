@@ -13,4 +13,4 @@ for p, v in enumerate(range(5)):
                 break
             pos += 1
 print('-='*30)
-print(f'Os valores digitados em ordem foram {valores}')
+print(f'Os valores digitados em ordem foram {valores}!')
