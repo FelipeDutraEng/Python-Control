@@ -23,12 +23,14 @@ print('-='*40)
 print(f'- O grupo tem {len(dados)} pessoas.')
 média = soma / len(dados)
 print(f'- A média de idade é de {média:.2f} anos.')
-print('- As mulheres cadastradas foram: ')
+print('- As mulheres cadastradas foram:', end=' ')
 for pessoa in dados:
     if pessoa['sexo'] == 'F':
-        print(f'{pessoa["nome"]}')
+        print(f'{pessoa["nome"]}', end=' ')
+print()
 print('- Lista das pessoas que estão acima da média:')
 for pessoa in dados:
     if pessoa["idade"] > média:
         print(f'nome = {pessoa["nome"]}; sexo = {
-            pessoa["sexo"]}; idade = {pessoa["idade"]}')
+            pessoa["sexo"]}; idade = {pessoa["idade"]};')
+print('<< ENCERRADO >>')
