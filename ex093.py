@@ -2,15 +2,14 @@ historico = dict()
 gols = list()
 nome = str(input('Nome do Jogador: ')).strip().title()
 partidas = int(input(f'Quantas partidas {nome} jogou? '))
-total = 0
+
 for j in range(partidas):
-    gol = int(input(f'Quantos gols na partida {j+1}? '))
-    total += gol
+    gol = int(input(f'    Quantos gols na partida {j+1}? '))
     gols.append(gol)
 
 historico['nome'] = nome
 historico['gols'] = gols
-historico['total'] = total
+historico['total'] = sum(historico['gols'])
 print('-='*30)
 print(historico)
 print('-='*30)

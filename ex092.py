@@ -1,10 +1,14 @@
 from datetime import date
-anoAtual = date.today().year
+
 dadosAponsentadoria = dict()
-nome = str(input('Nome: ')).strip().title()
-dadosAponsentadoria['nome'] = nome
+
+anoAtual = date.today().year
+
+dadosAponsentadoria['nome'] = str(input('Nome: ')).strip().title()
+
 nascimento = int(input('Ano de Nascimento: '))
 dadosAponsentadoria['idade'] = anoAtual - nascimento
+
 ctps = int(input('Carteira de Trabalho (0 não tem): '))
 dadosAponsentadoria['ctps'] = ctps
 if ctps != 0:
@@ -16,4 +20,4 @@ if ctps != 0:
         35 - (anoAtual - anoContrato)) + dadosAponsentadoria['idade']
 print('-='*30)
 for k, v in dadosAponsentadoria.items():
-    print(f'{k} tem o valor {v}')
+    print(f'  - {k} tem o valor {v}')
