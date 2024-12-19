@@ -9,7 +9,7 @@ def contagem(a, b, c):
         c = 1
     if a > b and c > 0:
         c *= -1
-    for cont in range(a, b, c):
+    for cont in range(a, b+1, c):
         print(cont, end=' ')
     print('FIM!')
 
