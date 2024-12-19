@@ -15,7 +15,7 @@ def título(msg):
 
 def área(largura, comprimento):
     área = largura * comprimento
-    print(f'A área de um terreno {largura}x{comprimento} é de {área}')
+    print(f'A área de um terreno {largura}x{comprimento} é de {área}m²')
 
 
 título('Controle de Terrenos')

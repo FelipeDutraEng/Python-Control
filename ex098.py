@@ -1,9 +1,13 @@
+from time import sleep
+
+
 def lin():
     print('-='*30)
 
 
 def contagem(a, b, c):
     lin()
+    sleep(0.3)
     print(f'Contagem de {a} até {b} de {c} em {c}')
     if c == 0:
         c = 1
@@ -11,6 +15,7 @@ def contagem(a, b, c):
         c *= -1
     for cont in range(a, b+1, c):
         print(cont, end=' ')
+        sleep(0.3)
     print('FIM!')
 
 

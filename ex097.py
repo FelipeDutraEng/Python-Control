@@ -1,6 +1,5 @@
 def escreva(msg):
-    esp = len(msg)
-    esp += 2
+    esp = len(msg) + 4
     print('~'*esp)
     print(f' {msg:^}')
     print('~'*esp)
