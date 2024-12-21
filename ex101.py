@@ -1,6 +1,9 @@
 from datetime import datetime
 anoAtual = datetime.now().year
 
+# datetime.now().year é para informar o ano atual da execução do exercicio. Vindo da biblioteca datetime
+
+
 def voto(nascimento):
     idade = anoAtual - nascimento
     if 17 < idade < 70:
@@ -17,4 +20,3 @@ def lin(num):
 
 lin(30)
 voto(int(input('Em que ano você nasceu? ')))
-
