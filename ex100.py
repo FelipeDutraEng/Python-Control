@@ -2,6 +2,8 @@ from random import randint
 from time import sleep
 numeros = []
 
+# função sorteio irá sortear 5 números de 1 a 10 com um sleep de 0.5 segundos.
+
 
 def sorteia():
     for c in range(5):
