@@ -1,5 +1,7 @@
 from time import sleep
 
+# Criação de um função lin de "linha" para facilitar a divisão de etapas do exercicio sem ficar repetindo.
+
 
 def lin():
     print('-='*30)
