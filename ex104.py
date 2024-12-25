@@ -7,4 +7,4 @@ def leiaInt(n):
 
 
 n = leiaInt('Digite um número: ')
-print(f'Você acabou de digitar o número{n}')
+resp = print(f'Você acabou de digitar o número{n}')
