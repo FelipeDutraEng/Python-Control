@@ -6,7 +6,9 @@ def fatorial(n, show=False):
     :param show: (Opcional) Se True, mostra o cálculo na tela.
     :return: O valor do fatorial de n.
     """
-    resultado = 1
+    resultado = 1 
+
+    
     for i in range(n, 0, -1):
         resultado *= i
         if show:  # Mostra os passos do cálculo
